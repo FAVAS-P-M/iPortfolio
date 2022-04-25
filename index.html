@@ -484,8 +484,9 @@
               method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>     
-                  <input type="text" name="name" onblur="validateName();" class="form-control" id="name" required>
+                  <label for="name">Your Name</label> 
+                  <p id="error"></p>
+                  <input type="text" name="name" onkeyup="validateName();" class="form-control" id="name" required>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="name">Your Email</label>
@@ -566,7 +567,7 @@
      
           if(!regExp.test($('#name').val()))
           { 
-             alert("only letters and spaces are allowed");
+             document.getElementById("error").innerHTML="only numbers and spaces are allowed";
           
           return false;
           }
