@@ -566,7 +566,7 @@
      
           if(!regExp.test($('#name').val()))
           { 
-             document.getElementById("clear").innerHTML="only letters and spaces are allowed"
+             alert("only letters and spaces are allowed");
           
           return false;
           }
@@ -577,7 +577,7 @@
         data: $("#submit-form").serialize(),
         method: "post",
         success: function (response) {
-          alert("Form submitted successfully")
+          alert("Form submitted successfully");
           window.location.reload()
         },
         error: function (err) {
