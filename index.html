@@ -566,7 +566,7 @@
      
           if(!regExp.test($('#name').val()))
           { 
-          alert("Correct your First Name: only letters and spaces.");
+          document.getElementById("name").innerHTML="ONLY LETTERS AND SPACES ARE ALLOWED";
           return false;
           }
 
