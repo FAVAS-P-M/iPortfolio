@@ -554,7 +554,7 @@
      
           if(!regExp.test($('#name').val()))
           { 
-          alert(" only letters and spaces are allowed");
+            document.getElementById("name").innerHTML="only letters and spaces are allowed"
           return false;
           }
           
